@@ -32,6 +32,8 @@ Errores: JSON inválido `400`, ruta inexistente `404`, método incorrecto `405`,
 
 ## Automatizaciones y ubicación
 
+La configuración del alojamiento está en [`deployment/hosting.json`](deployment/hosting.json). El build la incorpora al artefacto con la estructura que requiere el proveedor.
+
 | Archivo | Activación | Qué hace |
 | --- | --- | --- |
 | [`.github/workflows/quality.yml`](.github/workflows/quality.yml) | Push, pull request o manual | Instala dependencias y ejecuta Playwright API Testing contra un servidor local. Conserva resultados JSON y reporte HTML. |
